@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Streak Up</title>
+  <link rel="stylesheet" href="streakup.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">🧠 Streak Up</div>
+    <nav class="nav"> 
+      <a href="#login">Login</a> 
+      <a href="#modules">Modules</a>
+      <a href="#features">Features</a>
+      <a href="#footer">About</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Build Mental Strength, One Habit at a Time</h1>
+    <p>Start your journey of mindfulness, awareness, and growth.</p>
+    
+    <!-- JS-free scroll to Login -->
+    <a href="#login" class="btn-start">Start Now</a>
+  </div>
+</section>
+
+<!-- Login Section -->
+<section id="login" class="login-section">
+  <div class="login-container">
+    <h2>Login</h2>
+    <form>
+      <label for="username">Username</label>
+      <input type="text" id="username" placeholder="Enter your username" required>
+
+      <label for="password">Password</label>
+      <input type="password" id="password" placeholder="Enter your password" required>
+
+      <!-- JS-free scroll to Modules -->
+      <a href="#modules" class="login-btn">Login</a>
+    </form>
+    <p class="login-footer">
+      Don't have an account? <a href="#signup">Sign Up</a>
+    </p>
+  </div>
+</section>
+
+
+<!-- ===== Modules Section ===== -->
+<section id="modules" class="modules">
+  <h2>Choose Your Path</h2>
+  <p>Select a module to start your journey toward self-mastery.</p>
+
+  <div class="module-grid">
+    <div class="module-card purple">
+      <h3>🧠 Limiting Beliefs</h3>
+      <p>Identify and overcome mental barriers holding you back.</p>
+      <a href="#modal1" class="open-modal">Start Module</a>
+    </div>
+
+    <div class="module-card pink">
+      <h3>👁️ Awareness</h3>
+      <p>Develop mindfulness and self-awareness practices.</p>
+      <a href="#modal2" class="open-modal">Start Module</a>
+    </div>
+
+    <div class="module-card green">
+      <h3>🎯 Control Reality</h3>
+      <p>Learn techniques to shape your perception and responses.</p>
+      <a href="#modal3" class="open-modal">Start Module</a>
+    </div>
+
+    <div class="module-card orange">
+      <h3>✨ Meditation</h3>
+      <p>Build a daily meditation practice for inner peace.</p>
+      <a href="#modal4" class="open-modal">Start Module</a>
+    </div>
+
+    <div class="module-card purple">
+      <h3>📅 Progress Tracker</h3>
+      <p>Visualize your journey with streak calendars and insights.</p>
+      <a href="#modal5" class="open-modal">Start Module</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Modals for Each Module ===== -->
+<div id="modal1" class="modal">
+  <div class="modal-content">
+    <a href="#" class="close">&times;</a>
+    <h2>🧠 Limiting Beliefs</h2>
+    <p>Select your streak duration:</p>
+    <div class="streak-buttons">
+      <input type="radio" id="d7-1" name="days1"><label for="d7-1">7 Days</label>
+      <input type="radio" id="d14-1" name="days1"><label for="d14-1">14 Days</label>
+      <input type="radio" id="d21-1" name="days1"><label for="d21-1">21 Days</label>
+    </div>
+    <div class="reminder">
+      <label for="time1">Set Reminder:</label><br>
+      <input type="time" id="time1">
+    </div>
+    <a href="#show-streak" class="start-streak">Start Streak</a>
+  </div>
+</div>
+
+<div id="modal2" class="modal">
+  <div class="modal-content">
+    <a href="#" class="close">&times;</a>
+    <h2>👁️ Awareness</h2>
+    <p>Select your streak duration:</p>
+    <div class="streak-buttons">
+      <input type="radio" id="d7-2" name="days2"><label for="d7-2">7 Days</label>
+      <input type="radio" id="d14-2" name="days2"><label for="d14-2">14 Days</label>
+      <input type="radio" id="d21-2" name="days2"><label for="d21-2">21 Days</label>
+    </div>
+    <div class="reminder">
+      <label for="time2">Set Reminder:</label><br>
+      <input type="time" id="time2">
+    </div>
+    <a href="#show-streak" class="start-streak">Start Streak</a>
+  </div>
+</div>
+
+<div id="modal3" class="modal">
+  <div class="modal-content">
+    <a href="#" class="close">&times;</a>
+    <h2>🎯 Control Reality</h2>
+    <p>Select your streak duration:</p>
+    <div class="streak-buttons">
+      <input type="radio" id="d7-3" name="days3"><label for="d7-3">7 Days</label>
+      <input type="radio" id="d14-3" name="days3"><label for="d14-3">14 Days</label>
+      <input type="radio" id="d21-3" name="days3"><label for="d21-3">21 Days</label>
+    </div>
+    <div class="reminder">
+      <label for="time3">Set Reminder:</label><br>
+      <input type="time" id="time3">
+    </div>
+    <a href="#show-streak" class="start-streak">Start Streak</a>
+  </div>
+</div>
+
+<div id="modal4" class="modal">
+  <div class="modal-content">
+    <a href="#" class="close">&times;</a>
+    <h2>✨ Meditation</h2>
+    <p>Select your streak duration:</p>
+    <div class="streak-buttons">
+      <input type="radio" id="d7-4" name="days4"><label for="d7-4">7 Days</label>
+      <input type="radio" id="d14-4" name="days4"><label for="d14-4">14 Days</label>
+      <input type="radio" id="d21-4" name="days4"><label for="d21-4">21 Days</label>
+    </div>
+    <div class="reminder">
+      <label for="time4">Set Reminder:</label><br>
+      <input type="time" id="time4">
+    </div>
+    <a href="#show-streak" class="start-streak">Start Streak</a>
+  </div>
+</div>
+
+<div id="modal5" class="modal">
+  <div class="modal-content">
+    <a href="#" class="close">&times;</a>
+    <h2>📅 Progress Tracker</h2>
+    <p>Select your streak duration:</p>
+    <div class="streak-buttons">
+      <input type="radio" id="d7-5" name="days5"><label for="d7-5">7 Days</label>
+      <input type="radio" id="d14-5" name="days5"><label for="d14-5">14 Days</label>
+      <input type="radio" id="d21-5" name="days5"><label for="d21-5">21 Days</label>
+    </div>
+    <div class="reminder">
+      <label for="time5">Set Reminder:</label><br>
+      <input type="time" id="time5">
+    </div>
+    <a href="#show-streak" class="start-streak">Start Streak</a>
+  </div>
+</div>
+
+<!-- ===== Streak Result Section ===== -->
+<div id="show-streak"></div>
+<section id="streak">
+  <h2>🎉 Your Streak Has Started!</h2>
+  <p>Well done! You’ve successfully begun your journey toward growth.</p>
+</section>
+
+
+
+
+
+
+      
+
+  <!-- Features Section -->
+  <section id="features" class="features">
+    <h2>How Streak Up Works</h2>
+    <p>Simple, effective tools to build lasting mental wellness habits.</p>
+
+    <div class="feature-grid">
+      <div class="feature-card">
+        <div class="icon bg-primary">📅</div>
+        <h3>Track Streaks</h3>
+        <p>Choose 7, 30, or 90-day challenges and watch your consistency grow.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="icon bg-accent">📈</div>
+        <h3>See Progress</h3>
+        <p>Visualize your journey with beautiful calendars and insights.</p>
+      </div>
+
+      <div class="feature-card">
+        <div class="icon bg-success">🏅</div>
+        <h3>Earn Rewards</h3>
+        <p>Unlock achievements and celebrate milestones along the way.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== About Us Section ===== -->
+<section id="about-us" class="about-us">
+  <h2>About Us</h2>
+  <p>
+    The purpose of Streak Up is to help every individual improve their mindset, enabling them to connect with themselves and make positive changes in their life.
+  </p>
+  <p>
+    We believe that every person has potential, and only limiting beliefs or mindset barriers hold them back. We provide tools and lessons that turn awareness into action, aiding self-reflection and personal growth.
+  </p>
+  <p>
+    <strong>Short-term goal:</strong> Bring small but consistent improvements through the current modules.<br>
+    <strong>Long-term vision:</strong> Empower users using Quranic guidance, emotional intelligence, journaling, and practical real-life applications.
+  </p>
+</section>
+
+
+
+  <!-- Footer -->
+  <footer id="footer" class="footer">
+    <div class="footer-logo">🧠 Streak Up</div>
+    <p>Building mental strength, one habit at a time.</p>
+    <p class="small">© 2025 Streak Up. For educational purposes only.</p>
+  </footer>
+
+  <script>
+    function scrollToModules() {
+      document.getElementById("modules").scrollIntoView({ behavior: "smooth" });
+    }
+  </script>
+
+</body>
+</html>
